@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA+vr6AADy/wC/v78AG8fyAObm5gAFBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFVVVVVVVUQFTMzMzMzM1AERERERERDUAQiImYiIkUAACIiZiIiMQAAQiIiIiRQAAACIgAiIxAAAAQiACJFAAAAACIAIjEAAAAAQgAkUAAAAAACACMQAAAAAAQiRQAAAAAAACIxAAAAAAAARFAAAAAAAAAAAAAAD//wAAwAAAAIAAAADAAAAAwAEAAOABAADgAwAA8AMAAPAHAAD4BwAA+A8AAPwPAAD8HwAA/h8AAP4/AAD//wAA"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- Font Awesome Link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="app.css" />
+    <title>Access denied</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="top-container">
+        <div class="top">
+          <h2>Access denied</h2>
+          <div>
+            <span class="error-code">Error code 1020</span>
+          </div>
+        </div>
+        <p>
+          You do not have access to www.timestampgenerator.com. <br />
+          The site owner may have set restrictions that prevent you from
+          accessing the site. <br />
+          Contact the site owner for access or try loading the page again.
+        </p>
+      </div>
+
+      <!-- Bottom Container -->
+      <div class="bottom-container">
+        <div class="cols">
+          <h2>Additional information</h2>
+          <p>
+            The access policies of a site define which visits are allowed. Your
+            current visit is not allowed according to those policies. <br />
+            Only the site owner can change site access policies.
+          </p>
+        </div>
+        <div class="cols">
+          <h2>I am the site owner</h2>
+          <p>
+            Ray ID:
+            <button onclick="changeValue()">
+              <span id="span-num">Ep242L@%&2h&XQ8$</span
+              ><span id="copy-btn-text">Copy</span>
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <hr />
+      <footer>
+        <a href="https://facebook.com/TheAvisekGmre"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://github.com/TheAvisekGmre"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://instagram.com/whoisAnurag01"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/TheAvisekGmre"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://t.me/TheAvisekGmre"
+          ><i class="fa-brands fa-telegram"></i>
+        </a>
+        <a href="https://tiktok.com/@TheAvisekGmre"
+          ><i class="fa-brands fa-tiktok"></i
+        ></a>
+        <a href="https://snapchat.com/add/whoisAnurag01"
+          ><i class="fa-brands fa-snapchat"></i
+        ></a>
+      </footer>
+    </div>
+
+    <script>
+      const copyBtnText = document.querySelector("#copy-btn-text");
+      let copyText = document.querySelector("#span-num").textContent;
+      function changeValue() {
+        navigator.clipboard.writeText(copyText);
+        // changing the text
+        copyBtnText.innerHTML = "Copied!";
+      }
+    </script>
+  </body>
+</html>
