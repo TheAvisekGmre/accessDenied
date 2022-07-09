@@ -169,5 +169,8 @@ Footer a {
     .top, .bottom-container{
         flex-wrap: wrap;
     }
+    .top > *, .bottom-container > .cols{
+        flex-basis: 100%;
+    }
 }
 

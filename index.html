@@ -60,7 +60,7 @@
           <h2>I am the site owner</h2>
           <p>
             Ray ID:
-            <button onclick="changeValue()">
+            <button id="btn-click">
               <span id="span-num">Ep242L@%&2h&XQ8$</span
               ><span id="copy-btn-text">Copy</span>
             </button>
@@ -93,15 +93,6 @@
         ></a>
       </footer>
     </div>
-
-    <script>
-      const copyBtnText = document.querySelector("#copy-btn-text");
-      let copyText = document.querySelector("#span-num").textContent;
-      function changeValue() {
-        navigator.clipboard.writeText(copyText);
-        // changing the text
-        copyBtnText.innerHTML = "Copied!";
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
