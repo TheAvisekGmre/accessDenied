@@ -169,8 +169,25 @@ Footer a {
     .top, .bottom-container{
         flex-wrap: wrap;
     }
-    .top > *, .bottom-container > .cols{
+    .bottom-container > .cols{
         flex-basis: 100%;
     }
+    .top h2{
+        flex-basis: 50%;
+    }
+}
+@media screen and (max-width: 380px){
+    .top h2{
+        flex-basis: 60%;
+        font-size: 1.2rem;
+    }
+ 
+}
+@media screen and (max-width: 310px){
+    html{
+   
+        font-size: 8px;
+    }
+    
 }
 
